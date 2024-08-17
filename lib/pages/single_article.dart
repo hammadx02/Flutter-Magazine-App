@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
 import 'package:magazine_app/mock.dart';
 import 'package:magazine_app/widgets/custom_appbar.dart';
 
@@ -179,8 +178,12 @@ class _SingleArticleState extends State<SingleArticle>
             top: 0,
             left: 0,
             right: 0,
-            child: CustomAppBar(
-              popBack: true,
+            child: Container(
+              color: Colors.transparent,
+              height: 80,
+              child: CustomAppBar(
+                popBack: true,
+              ),
             ),
           ),
         ],
@@ -188,4 +191,3 @@ class _SingleArticleState extends State<SingleArticle>
     );
   }
 }
-
