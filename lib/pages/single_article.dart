@@ -182,9 +182,10 @@ class _SingleArticleState extends State<SingleArticle>
             child: CustomAppBar(
               popBack: true,
             ),
-          )
+          ),
         ],
       ),
     );
   }
 }
+
